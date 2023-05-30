@@ -4,7 +4,7 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
-    "tw:build": "tailwindcss build src/assets/styles/input-css -o dist/output.css",
+    "tw:build": "tailwindcss build src/assets/styles/input.css -o dist/output.css",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf .cache .cache-loader .parcel-cache",
