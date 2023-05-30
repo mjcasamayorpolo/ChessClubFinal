@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="stylesheet" href="../node_modules/lazyframe/dist/lazyframe.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <script type="module" src="./assets/scripts/main.js" async></script>
+    <script type="text/javascript" src="./assets/scripts/headerControl.js"></script>
+    <title>Chess Club</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <main class="flex flex-col items-center justify-center">
+      <article class="max-w-800 mx-auto my-auto p-4">
+        <h1 class="article__h1 text-center m-08">Inspírate</h1>
+        <p>En esta página ofrecemos distintas opciones para que busques tu inspiración y te motives. Podrás seguir nuestro calendario de eventos, jugar de manera online para mejorar tus habilidades, hacer un descanso viendo una película de las que te proponemos o parar a hacer una lectura con los libros siguiendo nuestras recomendaciones. Todo eso y mucho más te lo ofrecemos a continuación.</p>
+        <include src="./views/calendar.html"></include>
+        <include src="./views/game.html"></include>
+        <include src="./views/cine.html"></include>
+        <include src="./views/lectura.html"></include>        
+        <section class="my-8">
+          <p class="text-justify">Recuerda siempre que cuando no somos capaces de hallar una buena jugada, aun así tenemos que mover una pieza. Ello nos obliga a insistir, a buscar métodos alternativos; a seguir trabajando, ser creativos y optimistas, manteniendo la esperanza aun en las situaciones más difíciles.</p>
+          <div class="video relative h-0 overflow-hidden pb-5625"></div>
+        </section>
+      </article>        
+    </main>
+    <include src="./views/footer.html"></include>
+  </body>
+</html>

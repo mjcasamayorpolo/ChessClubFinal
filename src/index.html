@@ -4,24 +4,96 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Chess Club</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+    <main>
+      <figure class="m-0">
+        <img srcset="./assets/images/landscapeChess_260.jpg 260w,
+        ./assets/images/landscapeChess_320.jpg 320w,
+        ./assets/images/landscapeChess_480.jpg 480w,
+        ./assets/images/landscapeChess_800.jpg 800w,
+        ./assets/images/landscapeChess.jpg 900w"
+        sizes="(max-width: 260px) 260px,
+               (max-width: 320px) 320px,
+               (max-width: 480px) 480px,
+               (max-width: 800px) 800px,
+               900px"
+      src="./assets/images/landscapeChess_260.jpg" alt="Chess Club landscape" class="block max-w-full h-auto">
+      </figure>
+      <article class="max-w-800 mx-auto my-auto p-4">        
+        <div class="grid xs:grid-cols-1 xs:grid-rows-1-2 s:grid-cols-1 s:grid-rows-1-2 m:grid-cols-1 m:grid-rows-1-2 l:grid-cols-1 l:grid-rows-1-2 items-center xl:grid-cols-1-2 xl:grid-rows-1">
+          <blockquote class="w-90 my-15 bg-secondary py-15 px-30 border-l-4 border-solid border-secondary-text text-left">
+            <p class="text-1">El club  de ajedrez Chess Club es la ilusión de crecer, disfrutar y compartir. Chess Club tiene un reto: compartir una mejor forma de vida.</p>
+          </blockquote>
+          <p class="my-15 text-justify">El club  de ajedrez Chess Club es la ilusión de crecer, disfrutar y compartir. Chess Club tiene un reto: compartir una mejor forma de vida. El ajedrez comparte con el club el propósito del desarrollo del pensamiento, la enseñanza de valores y el facilitar hábitos virtuosos del carácter. Se ha asociado al ajedrez con aspectos importantes del pensamiento científico; capacidad de observación, organización de datos, técnicas y métodos para el abordaje y toma de decisiones. Se ha demostrado experimentalmente que el ajedrez estimula el desarrollo de habilidades y procesos tales como: atención, expresión numérica y verbal, autoestima, análisis, síntesis, inteligencia y creatividad.</p>
+        </div>
+            
+        <hr class="my-8 mx-0">
+        <p class="text-justify">Chess Club se mantiene sobre los siguientes fundamentos:</p>
+        <ol class="pl-10 list-none leading-18 counter">
+          <li class="relative py-1.5 pr-0 pl-30 counterList">
+            Compartir
+            <p>Compartirás valores como la deportividad, compañerismo, lealtad, esfuerzo, compromiso y humildad por bandera.</p>
+          </li>
+          <li class="relative py-1.5 pr-0 pl-30 counterList">
+            Crecimiento
+            <p>Potenciarás destrezas cognitivas que te servirán en muchos ámbitos de tu vida personal, académica y profesional.</p>
+          </li>
+          <li class="relative py-1.5 pr-0 pl-30 counterList">
+            Diversión
+            <p>Vivirás momentos inolvidables, miles de experiencias y cientos de viajes roadeado/a de amigos/as del club, una familia unida hasta el final.</p>
+          </li>
+        </ol>
+        <p class="text-justify">Tú puedes formar parte de todo esto. ¿A qué estás esperando?</p>
+
+        <hr class="my-8 mx-0">
+
+        <h1 class="article__h1">Nuestro club</h1>
+        <p class="text-justify">Chess Club se fundó en el año 2002 por un grupo de aficionados y aficionadas amantes de este juego. Su objetivo principal era el de promocionar el ajedrez entre los grupos más jóvenes del barrio, crear un grupo de amigos y competir en los torneos oficionales. S e trata e una entidad respaldada y comprometida con el Ayuntamiento de Valencia y lleva más de veinte años dedicada al mundo del ajedrez. En la actualidad cuenta con más de 500 alumnos y en los últimos años viene promoviendo el deporte base y todo tipo de extraescolares en diferentes colegios de la ciudad.</p>
+        <figure>
+          <img srcset="./assets/images/torneo_260.jpg 260w,
+          ./assets/images/torneo_320.jpg 320w,
+          ./assets/images/torneo_480.jpg 480w,
+          ./assets/images/torneo_800.jpg 800w,
+          ./assets/images/torneo_900.jpg 900w"
+          sizes="(max-width: 320px) 260px,
+                 (max-width: 480px) 320px,
+                 (max-width: 800px) 480px,
+                 (max-width: 900px) 800px,
+                 900px"
+          src="./assets/images/torneo_260.jpg" alt="Torneo de ajedrez" class="w-full">
+        </figure>
+
+        <h2 class="article__h2">¿Por qué ajedrez?</h2>
+        <p class="text-justify">La práctica del ajedrez (arte, ciencia y deporte) desarrolla las capacidades intelectuales, reforzando el proceso de desarrollo del razonamiento lógico, y favoreciendo los aspectos educativos esenciales a la vez que se explican las reglas y las estrategias de uno de los juegos más populares del mundo.</p>
+        <p class="text-justify"> El ajedrez es un medio para desarrollar habilidades mentales como la atención, la imaginación, el pensamiento abstracto, la memoria, la percepción, la planificación, el rigor mental, el análisis sistemático, la toma de decisiones, el pensamiento crítico, el aprendizaje a partir del error, el pensamiento hipotético… Además es un magnífico recurso para enseñar valores tales como  el respeto hacia el oponente y hacia las normas, la responsabilidad, la cortesía, el saber ganar y perder, la humildad, la perseverancia, la disciplina, la tenacidad, la autoestima, la paciencia, el autocontrol, la tolerancia y la amistad.</p>
+        <p class="text-justify">Si tienes inquietud por este deporte, si te apasiona pasar ratos con amigos que comparten las mismas inquietudes que tú, o si quieres mejorar cada día en un entorno sano y amigable, ¡este es tu club! Contacta con nosotros y trataremos de resolver cualquier duda que te surja.</p>
+        <section class="my-8">
+          <h2 class="article__h2">Contacta con nosotros</h2>
+          <form id="contactForm" data-sb-form-api-token="API_TOKEN" data-bs-theme="gray">
+            <div class="form-floating mb-3">
+              <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+              <label for="name">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+              <label for="emailAddress">Correo electrónico</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+              <label for="message">Mensaje</label>            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </article>      
+    </main>
     <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

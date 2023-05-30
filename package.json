@@ -4,11 +4,12 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
+    "tw:build": "tailwindcss build src/assets/styles/input-css -o dist/output.css",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
-    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
-    "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "clean": "rimraf .cache .cache-loader .parcel-cache",
+    "dev": "npm-run-all clean parcel:serve tw:build",
+    "build": "npm-run-all clean parcel:build tw:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
@@ -36,12 +37,21 @@
   "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.8.3",
+    "postcss": "^8.4.24",
+    "postcss-import": "^15.1.0",
     "postcss-preset-env": "^7.8.3",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2",
-    "sharp": "0.31.1"
+    "sharp": "0.31.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@popperjs/core": "^2.11.8",
+    "fullcalendar": "^6.1.8",
+    "lazyframe": "^2.2.7"
   }
 }

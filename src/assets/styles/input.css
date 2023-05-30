@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .cards {
+        @apply flex flex-wrap justify-evenly;
+    }
+    
+    .video > iframe {
+        @apply absolute top-0 left-0 w-full h-full border-0;
+    }
+
+    .article__h1 {
+        @apply text-l text-secondary-text;
+    }
+
+    .article__h2 {
+        @apply text-ml;
+    }
+
+    .section__h2{
+        @apply text-m text-secondary-text;
+    }
+
+    .section__h5 {
+        @apply text-s;
+    }
+
+    .calendar .fc-toolbar-title {
+        @apply text-s;
+    }
+    
+    .counterList::before {
+        content: counter(li);
+        @apply absolute top-[4px] left-0 w-[20px] h-[20px] text-black text-center border border-solid border-gray rounded-50;
+        counter-increment: li;
+    }
+}
