@@ -1,13 +1,5 @@
-//import * as bootstrap from 'bootstrap';
-//import { Tooltip } from "bootstrap";
 import { Calendar } from 'fullcalendar';
 import lazyframe from "lazyframe";
-
-// var myCarousel = document.querySelector('.peliculas__div')
-// var carousel = new bootstrap.Carousel(myCarousel, {
-//   interval: 5000,
-//   wrap: false
-// });
 
 const videoContainer = document.querySelector('.video');
 const lazyVideo = document.createElement('div');
@@ -64,14 +56,6 @@ const calendar = new Calendar(calendarEl, {
       description: 'Clase de ajedrez - Horario: 18:00-19:00',
       start: '2023-05-30'
     }
-  ],
-  eventDidMount: function(info) {
-    // var tooltip = new Tooltip(info.el, {
-    //   title: info.event.extendedProps.description,
-    //   placement: 'top',
-    //   trigger: 'hover',
-    //   container: 'body'
-    // });
-  }
+  ]
 });
 calendar.render();

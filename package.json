@@ -4,12 +4,11 @@
   "private": true,
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
-    "tw:build": "tailwindcss build src/assets/styles/input.css -o dist/output.css",
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
-    "clean": "rimraf .cache .cache-loader .parcel-cache",
-    "dev": "npm-run-all clean parcel:serve tw:build",
-    "build": "npm-run-all clean parcel:build tw:build",
+    "clean": "rimraf .cache .cache-loader .parcel-cache dist",
+    "dev": "npm-run-all clean parcel:serve",
+    "build": "npm-run-all clean parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
