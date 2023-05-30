@@ -75,21 +75,16 @@
         <p class="text-justify">Si tienes inquietud por este deporte, si te apasiona pasar ratos con amigos que comparten las mismas inquietudes que tú, o si quieres mejorar cada día en un entorno sano y amigable, ¡este es tu club! Contacta con nosotros y trataremos de resolver cualquier duda que te surja.</p>
         <section class="my-8">
           <h2 class="article__h2">Contacta con nosotros</h2>
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN" data-bs-theme="gray">
-            <div class="form-floating mb-3">
-              <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-              <label for="name">Nombre</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-              <label for="emailAddress">Correo electrónico</label>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-              <label for="message">Mensaje</label>            </div>
-            <div class="d-grid">
-              <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Enviar</button>
-            </div>
+          <form>
+            <label for="name">Nombre:</label><br>
+            <input class="w-full" type="text" id="name" name="name" placeholder="Nombre"><br>
+            <label for="email">Email:</label><br>
+            <input class="w-full" type="email" id="email" name="email" placeholder="Email"><br>
+            <label for="msg">Mensaje:</label><br>
+            <textarea class="w-full" id="msg" name="msg" placeholder="Mensaje"></textarea><br>
+            <div class="grid bg-secondary-text text-secondary">
+              <button id="submitButton" type="submit">Enviar</button>
+            </div>            
           </form>
         </section>
       </article>      
