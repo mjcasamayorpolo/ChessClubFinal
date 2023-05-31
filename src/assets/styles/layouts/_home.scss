@@ -1,4 +1,13 @@
+@layer components {
+  .counterList {
+    &::before {
+      content: counter(li);
+      @apply absolute top-[4px] left-0 w-[20px] h-[20px] text-black text-center border border-solid border-gray rounded-50;
+      counter-increment: li;
+    }
+  }
+}
 
 .counter {
-    counter-reset: li;
+  counter-reset: li;
 }

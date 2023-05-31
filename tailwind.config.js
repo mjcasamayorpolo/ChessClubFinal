@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'main': '#f5f5f7',
         'secondary': '#fff',
+        'main-text': '#2a2a2a',
         'secondary-text': '#8c8c9f',
         'gray': 'gray'
       },
@@ -31,9 +33,17 @@ module.exports = {
       fontSize: {
         '1': '1.1em',
         's': '1.5em',
+        'ssm': 'calc(1rem + .2vw)',
+        'sm': 'calc(1rem + .6vw)',
         'm': 'calc(1em + 1vw)',
         'ml': '2rem',
         'l': 'calc(1em + 2vw)'
+      },
+      fontFamily: {
+        'sans-serif': ['Montserrat-regular', "Segoe UI", "roboto",
+        "Helvetica Neue", "arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol"],
+        'secondary-title': ['Montserrat-semibold'] 
       },
       maxWidth: {
         '800': '800px'
