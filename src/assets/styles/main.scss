@@ -11,15 +11,8 @@
    #GENERAL
 \* ------------------------------------ */
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 @layer components {
   html {
-    box-sizing: border-box;
     @apply text-[10px];
   }
 

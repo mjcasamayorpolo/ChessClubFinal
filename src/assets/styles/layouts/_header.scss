@@ -1,7 +1,6 @@
 @layer components {
   .header {
-    @apply z-10 top-0 bg-secondary text-center;
-    box-shadow: 0 0 8px $black-shadow;
+    @apply z-10 top-0 bg-secondary text-center shadow-[0_0_8px_#999];
 
     &__li {
       &--active {
